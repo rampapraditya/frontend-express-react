@@ -35,12 +35,8 @@ export default function UsersEdit() {
 
     //method fetchDetailUser
     const fetchDetailUser = async () => {
-        
-        //fetch data
         await api.get(`/api/admin/users/${id}`)
             .then(response => {
-                
-                //assign to state
                 setName(response.data.data.name);
                 setEmail(response.data.data.email);
             })
@@ -48,10 +44,7 @@ export default function UsersEdit() {
 
     //hook useEffect
     useEffect(() => {
-        
-        //call method "fetchDetailUser"
         fetchDetailUser();
-
     }, []);
 
     //method "updateUser"
@@ -65,16 +58,12 @@ export default function UsersEdit() {
             email: email,
             password: password
         })
-            .then(() => {
-
-                //redirect ke halaman users
-                navigate('/admin/users')
-            })
-            .catch(error => {
-
-                //assign error to state validation
-                setValidation(error.response.data);
-            })
+        .then(() => {
+            navigate('/admin/users')
+        })
+        .catch(error => {
+            setValidation(error.response.data);
+        })
     }
 
 
