@@ -5,3 +5,6 @@ This template provides a minimal setup to get React working in Vite with HMR and
 # Backend
 https://github.com/rampapraditya/backend-express
 
+
+# How to run
+npm run dev
