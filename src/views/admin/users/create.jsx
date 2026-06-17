@@ -54,17 +54,17 @@ export default function UsersCreate() {
 
 
     return (
-        <div class="container mt-5 mb-5">
-            <div class="row">
+        <div className="container mt-5 mb-5">
+            <div className="row">
                 <div className="col-md-3">
                     <SidebarMenu />
                 </div>
-                <div class="col-md-9">
-                    <div class="card border-0 rounded shadow-sm">
-                        <div class="card-header">
+                <div className="col-md-9">
+                    <div className="card border-0 rounded shadow-sm">
+                        <div className="card-header">
                             ADD USER
                         </div>
-                        <div class="card-body">
+                        <div className="card-body">
                             {
                                 validation.errors && (
                                     <div className="alert alert-danger mt-2 pb-0">
@@ -78,24 +78,24 @@ export default function UsersCreate() {
                             }
                             <form onSubmit={storeUser}>
 
-                                <div class="form-group mb-3">
-                                    <label class="mb-1 fw-bold">Full Name</label>
-                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} class="form-control" placeholder="Full Name" />
+                                <div className="form-group mb-3">
+                                    <label className="mb-1 fw-bold">Full Name</label>
+                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="form-control" placeholder="Full Name" />
                                 </div>
 
-                                <div class="form-group mb-3">
-                                    <label class="mb-1 fw-bold">Email address</label>
-                                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} class="form-control"
+                                <div className="form-group mb-3">
+                                    <label className="mb-1 fw-bold">Email address</label>
+                                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control"
                                         placeholder="Email Address" />
                                 </div>
 
-                                <div class="form-group mb-3">
-                                    <label class="mb-1 fw-bold">Password</label>
-                                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control"
+                                <div className="form-group mb-3">
+                                    <label className="mb-1 fw-bold">Password</label>
+                                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control"
                                         placeholder="Password" />
                                 </div>
 
-                                <button type="submit" class="btn btn-sm btn-primary">SAVE</button>
+                                <button type="submit" className="btn btn-sm btn-primary">SAVE</button>
                             </form>
                         </div>
                     </div>
