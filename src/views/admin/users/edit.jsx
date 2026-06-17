@@ -115,7 +115,7 @@ export default function UsersEdit() {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 
 }
