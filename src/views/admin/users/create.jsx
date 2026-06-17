@@ -101,7 +101,7 @@ export default function UsersCreate() {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 
 }
